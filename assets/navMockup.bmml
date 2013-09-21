@@ -22,7 +22,7 @@
         <src>./assets/kissAndStop_edited-1.png</src>
       </controlProperties>
     </control>
-    <control controlID="29" controlTypeID="com.balsamiq.mockups::StickyNote" x="858" y="196" w="95" h="105" measuredW="109" measuredH="123" zOrder="6" locked="false" isInGroup="-1">
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::StickyNote" x="968" y="218" w="95" h="105" measuredW="109" measuredH="123" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Add%20a%20location%20or%20comment</text>
       </controlProperties>
@@ -81,6 +81,11 @@
       <controlProperties>
         <size>24</size>
         <text>Vallco%20Mall%20horseshoe%2C%20Wolfe%20exit</text>
+      </controlProperties>
+    </control>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::StickyNote" x="654" y="215" w="105" h="79" measuredW="109" measuredH="123" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Context%20filter</text>
       </controlProperties>
     </control>
   </controls>
