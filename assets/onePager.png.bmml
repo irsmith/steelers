@@ -1,0 +1,48 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="993" measuredH="767" mockupW="974" mockupH="607">
+  <controls>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Label" x="773" y="746" w="-1" h="-1" measuredW="205" measuredH="21" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Irene%20Skup%20Smith%20September%202013</text>
+      </controlProperties>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::Image" x="56" y="270" w="278" h="331" measuredW="300" measuredH="400" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/kissAndPark.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Title" x="19" y="212" w="-1" h="-1" measuredW="480" measuredH="43" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Curve-side%20Drop-off%20finder</text>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::TextArea" x="358" y="270" w="635" h="447" measuredW="200" measuredH="140" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <size>20</size>
+        <text>Find%20safe%2C%20uncongested%20places%20to%20drop%20off%20your%20passengers.%0A%20%0ACrowd%20collection%20resource%20of%20places%20to%20drop%20off%20passengers.%20The%20name%20originates%20from%20the%201960%27s%20Pittsburgh%20Trolly%20Station%20drop-offs%20where%20wives%20would%20drop%20off%20their%20husbands.%0A%20%0ATravelers%20can%20find%20little%20known%2C%20less%20congested%20airport%20%20drop-off%20curves.%20Parents%20can%20find%20a%20safe%20place%20pickup%2015%20year%20olds%20from%20the%20mall%2C%20or%20young%20athletes%20at%20a%20high%20school%20event.%20%20Members%20can%20add%20new%20locations%20or%20annotate%20existing%20locations.%0A%20%0AUsers%20can%20filter%20by%20context%20such%20as%20Airport%2C%20Mall%2C%20Stadium%2C%20and%20School.%20Advertizers%20target%20using%20these%20contexts.%0A%20%20%0A%20%0A%20%0A%20%0AThe%20user%20experience%20centers%20around%20the%20Kiss%20in%20a%20humorous%2C%20light%20way.%3A%20%20red%20lips%20graphics%20and%20annimations%2C%20Kiss%20sounds%20and%20Kiss%20puns.</text>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::MultilineButton" x="77" y="607" w="98" h="124" measuredW="63" measuredH="124" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>APIs%0A%20%0AMaps%0AAuthentication%0ASound%0AAnnimation</text>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::MultilineButton" x="183" y="607" w="116" h="124" measuredW="72" measuredH="95" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Users%0ATravelers%0AParents%0AAdvertisers</text>
+      </controlProperties>
+    </control>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::Title" x="19" y="160" w="-1" h="-1" measuredW="315" measuredH="63" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>60</size>
+        <text>Kiss%20n%20Park</text>
+      </controlProperties>
+    </control>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::Image" x="825" y="571" w="125" h="101" measuredW="54" measuredH="54" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/redLips.jpg</src>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
