@@ -129,8 +129,6 @@ public final class MainActivity extends ListActivity {
                     MultiMapDemoActivity.class),
             new DemoDetails(R.string.retain_map, R.string.retain_map_description,
                     RetainMapActivity.class),
-            new DemoDetails(R.string.raw_mapview_demo, R.string.raw_mapview_description,
-                    RawMapViewDemoActivity.class),
             new DemoDetails(R.string.programmatic_demo, R.string.programmatic_description,
                     ProgrammaticDemoActivity.class),
             new DemoDetails(R.string.visible_region_demo, R.string.visible_region_description,
