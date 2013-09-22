@@ -16,6 +16,8 @@ gen/
 local.properties
 
 # Eclipse project files
+google-play-services
+project.properties
 .settings
 .metadata
 .classpath
