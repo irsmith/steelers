@@ -1,110 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="net.skup.knstop"
-  android:versionCode="3"
-  android:versionName="2.2.1">
-  <!-- Copied from Google Maps Library/AndroidManifest.xml. -->
-  <uses-sdk
-    android:minSdkVersion="8"
-    android:targetSdkVersion="17"/>
-  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-  <uses-permission android:name="android.permission.INTERNET"/>
-  <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
-  <!-- External storage for caching. -->
-  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-  <!-- My Location -->
-  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-  <!-- Maps API needs OpenGL ES 2.0. -->
-  <uses-feature
-    android:glEsVersion="0x00020000"
-    android:required="true"/>
-  <!-- End of copy. -->
-  <application
-    android:icon="@drawable/ic_launcher"
-    android:label="@string/demo_title"
-    android:hardwareAccelerated="true">
-    <!-- ** You need to replace the key below with your own key. **
+    package="net.skup.knstop"
+    android:versionCode="3"
+    android:versionName="2.2.1" >
+
+    <!-- Copied from Google Maps Library/AndroidManifest.xml. -->
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- External storage for caching. -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- My Location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Maps API needs OpenGL ES 2.0. -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <!-- End of copy. -->
+    <application
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/demo_title" >
+
+        <!--
+         ** You need to replace the key below with your own key. **
          The example key below will not be accepted because it is not linked to the
          certificate which you will use to sign this application.
          See: https://developers.google.com/maps/documentation/android/start
-         for instructions on how to get your own key. -->
-    <meta-data android:name="com.google.android.maps.v2.API_KEY"
-    android:value="AIzaSyDIvUt2Fy9rA2Yok78rZoDLC12wOONit-o"/>
-    <activity android:name="net.skup.knstop.MainActivity">
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN"/>
-        <category android:name="android.intent.category.LAUNCHER"/>
-      </intent-filter>
-    </activity>
-    <activity
-      android:name="net.skup.knstop.BasicMapActivity"
-      android:label="@string/basic_map"/>
-    <activity
-      android:name="net.skup.knstop.CameraDemoActivity"
-      android:label="@string/camera_demo"/>
-    <activity
-      android:name="net.skup.knstop.CircleDemoActivity"
-      android:label="@string/circle_demo"/>
-    <activity
-      android:name="net.skup.knstop.EventsDemoActivity"
-      android:label="@string/events_demo"/>
-    <activity
-      android:name="net.skup.knstop.GroundOverlayDemoActivity"
-      android:label="@string/groundoverlay_demo"/>
-    <activity
-      android:name="net.skup.knstop.LayersDemoActivity"
-      android:label="@string/layers_demo"/>
-    <activity
-      android:name="net.skup.knstop.LegalInfoActivity"
-      android:label="@string/legal_info"/>
-    <activity
-      android:name="net.skup.knstop.LocationSourceDemoActivity"
-      android:label="@string/locationsource_demo"/>
-    <activity
-      android:name="net.skup.knstop.MapInPagerActivity"
-      android:label="@string/mapinpager_demo"/>
-    <activity
-      android:name="net.skup.knstop.MarkerDemoActivity"
-      android:label="@string/marker_demo"/>
-    <activity
-      android:name="net.skup.knstop.MultiMapDemoActivity"
-      android:label="@string/multi_map_demo"/>
-    <activity
-      android:name="net.skup.knstop.MyLocationDemoActivity"
-      android:label="@string/my_location_demo"/>
-    <activity
-      android:name="net.skup.knstop.OptionsDemoActivity"
-      android:label="@string/options_demo"/>
-    <activity
-      android:name="net.skup.knstop.PolygonDemoActivity"
-      android:label="@string/polygon_demo"/>
-    <activity
-      android:name="net.skup.knstop.PolylineDemoActivity"
-      android:label="@string/polyline_demo"/>
-    <activity
-      android:name="net.skup.knstop.ProgrammaticDemoActivity"
-      android:label="@string/programmatic_demo"/>
-    <activity
-      android:name="net.skup.knstop.RawMapViewDemoActivity"
-      android:label="@string/raw_mapview_demo"/>
-    <activity
-      android:name="net.skup.knstop.RetainMapActivity"
-      android:label="@string/retain_map"/>
-    <activity
-      android:name="net.skup.knstop.SaveStateDemoActivity"
-      android:label="@string/save_state_demo"/>
-    <activity
-      android:name="net.skup.knstop.SnapshotDemoActivity"
-      android:label="@string/snapshot_demo"/>
-    <activity
-      android:name="net.skup.knstop.TileOverlayDemoActivity"
-      android:label="@string/tile_overlay_demo"/>
-    <activity
-      android:name="net.skup.knstop.UiSettingsDemoActivity"
-      android:label="@string/uisettings_demo"/>
-    <activity
-      android:name="net.skup.knstop.VisibleRegionDemoActivity"
-      android:label="@string/visible_region_demo"/>
-  </application>
+         for instructions on how to get your own key.
+        -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDIvUt2Fy9rA2Yok78rZoDLC12wOONit-o" />
+
+        <activity android:name="net.skup.knstop.SplashScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="net.skup.knstop.MainActivity" >
+        </activity>
+        <activity
+            android:name="net.skup.knstop.BasicMapActivity"
+            android:label="@string/basic_map" />
+        <activity
+            android:name="net.skup.knstop.CameraDemoActivity"
+            android:label="@string/camera_demo" />
+        <activity
+            android:name="net.skup.knstop.CircleDemoActivity"
+            android:label="@string/circle_demo" />
+        <activity
+            android:name="net.skup.knstop.EventsDemoActivity"
+            android:label="@string/events_demo" />
+        <activity
+            android:name="net.skup.knstop.GroundOverlayDemoActivity"
+            android:label="@string/groundoverlay_demo" />
+        <activity
+            android:name="net.skup.knstop.LayersDemoActivity"
+            android:label="@string/layers_demo" />
+        <activity
+            android:name="net.skup.knstop.LegalInfoActivity"
+            android:label="@string/legal_info" />
+        <activity
+            android:name="net.skup.knstop.LocationSourceDemoActivity"
+            android:label="@string/locationsource_demo" />
+        <activity
+            android:name="net.skup.knstop.MapInPagerActivity"
+            android:label="@string/mapinpager_demo" />
+        <activity
+            android:name="net.skup.knstop.MarkerDemoActivity"
+            android:label="@string/marker_demo" />
+        <activity
+            android:name="net.skup.knstop.MultiMapDemoActivity"
+            android:label="@string/multi_map_demo" />
+        <activity
+            android:name="net.skup.knstop.MyLocationDemoActivity"
+            android:label="@string/my_location_demo" />
+        <activity
+            android:name="net.skup.knstop.OptionsDemoActivity"
+            android:label="@string/options_demo" />
+        <activity
+            android:name="net.skup.knstop.PolygonDemoActivity"
+            android:label="@string/polygon_demo" />
+        <activity
+            android:name="net.skup.knstop.PolylineDemoActivity"
+            android:label="@string/polyline_demo" />
+        <activity
+            android:name="net.skup.knstop.ProgrammaticDemoActivity"
+            android:label="@string/programmatic_demo" />
+        <activity
+            android:name="net.skup.knstop.RawMapViewDemoActivity"
+            android:label="@string/raw_mapview_demo" />
+        <activity
+            android:name="net.skup.knstop.RetainMapActivity"
+            android:label="@string/retain_map" />
+        <activity
+            android:name="net.skup.knstop.SaveStateDemoActivity"
+            android:label="@string/save_state_demo" />
+        <activity
+            android:name="net.skup.knstop.SnapshotDemoActivity"
+            android:label="@string/snapshot_demo" />
+        <activity
+            android:name="net.skup.knstop.TileOverlayDemoActivity"
+            android:label="@string/tile_overlay_demo" />
+        <activity
+            android:name="net.skup.knstop.UiSettingsDemoActivity"
+            android:label="@string/uisettings_demo" />
+        <activity
+            android:name="net.skup.knstop.VisibleRegionDemoActivity"
+            android:label="@string/visible_region_demo" />
+        <activity
+            android:name="net.skup.knstop.DetailActivity"
+            android:label="@string/title_activity_detail" >
+        </activity>
+    </application>
+
 </manifest>

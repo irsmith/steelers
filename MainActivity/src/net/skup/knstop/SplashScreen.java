@@ -21,7 +21,7 @@ public class SplashScreen extends Activity{
 						sleep(100);
 						logoTimer = logoTimer +100;
 					};
-					// startActivity(new Intent(SplashActivity.this, MainActivity.class));
+					startActivity(new Intent(SplashScreen.this, BasicMapActivity.class));
 				} 
 
 				catch (InterruptedException e) {

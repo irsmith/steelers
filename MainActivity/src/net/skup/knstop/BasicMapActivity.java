@@ -16,12 +16,20 @@
 
 package net.skup.knstop;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.GoogleMap.OnMarkerClickListener;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 /**
@@ -48,6 +56,33 @@ public class BasicMapActivity extends FragmentActivity {
         super.onResume();
         setUpMapIfNeeded();
     }
+    
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.main_options, menu);
+		return true;
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		super.onOptionsItemSelected(item);
+
+		switch (item.getItemId()) {
+		case R.id.addMenuitem:{
+			Intent i = new Intent(this, DetailActivity.class);
+			i.putExtra("title", "New at My Location");
+			startActivity(i);
+			break;
+		}
+		case R.id.filterMenuitem:{
+			return true;
+		}
+		default:{
+			return super.onOptionsItemSelected(item);
+		}
+		}
+		return true;
+	}
 
     /**
      * Sets up the map if it is possible to do so (i.e., the Google Play services APK is correctly
@@ -84,6 +119,35 @@ public class BasicMapActivity extends FragmentActivity {
      * This should only be called once and when we are sure that {@link #mMap} is not null.
      */
     private void setUpMap() {
-        mMap.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
+//    	37.423344,-122.082095, stadium, Shoreline Amphitheater, easy curve-side with heavy concert traffic
+//    	37.337459,-122.04845,school,Homestead High School, athletic field 
+//    	37.335885,-122.014621,Shoreline Amphitheater, horseshoe for mall, approach from the north
+    	final Activity b = this;
+    	mMap.setOnMarkerClickListener(new OnMarkerClickListener() {
+
+			@Override
+			public boolean onMarkerClick(Marker marker) {
+			
+				Intent i = new Intent(b, DetailActivity.class);
+				i.putExtra("title", marker.getTitle());
+				startActivity(i);
+				return true;
+			}
+    		
+    	});
+    	 BitmapDescriptor b2 = BitmapDescriptorFactory.fromResource(R.drawable.redlip2);
+         mMap.addMarker(new MarkerOptions().icon(b2)
+         		.position(new LatLng(37.337459,-122.04845))
+         		.title("Homestead High School athletics"));
+    	mMap.setMyLocationEnabled(true);
+        mMap.addMarker(new MarkerOptions().position(new LatLng(37.3975,-122.0732)).title("My Location"));
+        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.redlip2))
+        .position(new LatLng(37.423344,-122.082095))
+        .title("Shoreline Amphitheater")
+        );
+       
+        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.redlip2))
+        		.position(new LatLng(37.335885,-122.014621)).title("Vallco Shopping Center"));
+
     }
 }
