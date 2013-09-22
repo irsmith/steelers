@@ -39,9 +39,8 @@ public class DetailActivity extends Activity {
 				imageView.setImageDrawable(getResources().getDrawable(R.drawable.valcohorseshoe));
 				textView.setText("Off site curve");
 			} else if (title.startsWith("New")) {
-				setContentView(R.layout.activity_detail);
 				this.setTitle("New Drop-off");
-				imageView.setImageDrawable(getResources().getDrawable(R.drawable.valcohorseshoe));
+				imageView.setImageDrawable(getResources().getDrawable(R.drawable.moffet));
 				textView.setText("Drop-Off site curve");
 				
 			}

@@ -45,6 +45,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="net.skup.knstop.LoginRequestActivity" >
+        </activity>
         <activity android:name="net.skup.knstop.MainActivity" >
         </activity>
         <activity

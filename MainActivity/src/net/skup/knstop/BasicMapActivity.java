@@ -69,8 +69,7 @@ public class BasicMapActivity extends FragmentActivity {
 
 		switch (item.getItemId()) {
 		case R.id.addMenuitem:{
-			Intent i = new Intent(this, DetailActivity.class);
-			i.putExtra("title", "New at My Location");
+			Intent i = new Intent(this, LoginRequestActivity.class);
 			startActivity(i);
 			break;
 		}
